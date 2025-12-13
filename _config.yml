@@ -1,4 +1,10 @@
+title: Bonnie LaCroix
+description: >
+  Clinical data, oncology domain expertise, and research operations systems.
+  Bridging bench science and scalable data workflows.
+
 theme: jekyll-theme-cayman
-title: Bonnie LaCroix -- Clinical Data & Translational Informatics Portfolio
-description: Hi, I'm **Bonnie LaCroix** I work at the intersection of *oncology*, *clinical sample workflows*, and *data structure design*.  
-My background in translational research and molecular biology has naturally evolved into a passion for data modeling, clinincal dta structure development, QC and abstraction logic, Real-world oncology data workflows, and Process clarity and reproducibility. This portfolio highlights several representative projects that demonstrate the skills I use — and love using — in data-oriented roles.:
+
+show_downloads: false
+github:
+  is_project_page: false
