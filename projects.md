@@ -2,6 +2,10 @@
 
 ## 1. Correlative Sample LIMS (PostgreSQL)
 
+This system was designed around real oncology trial workflows, including
+treatment cycles, progression events, biomarker-driven sampling, and
+patient-level metadata that materially affects downstream analysis.
+
 **Goal:**  
 Design a scalable, auditable database for managing correlative
 clinical-trial biospecimens.
@@ -44,6 +48,10 @@ Automate equipment usage logging and generate operational insights.
 ---
 
 ## 3. Oncology Data Reasoning & QC Frameworks
+
+This project reflects how clinical reality—pathology findings, treatment
+timing, and patient characteristics—must be translated into precise,
+auditable variables for real-world data analysis.
 
 **Goal:**  
 Demonstrate clinical abstraction logic used in real-world oncology data.
