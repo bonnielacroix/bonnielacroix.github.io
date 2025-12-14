@@ -1,28 +1,90 @@
 # Projects
 
+My projects focus on translating real oncology research workflows into
+structured, high-quality data that can be reliably analyzed and reused.
+Across these efforts, I emphasize clinical context, variable definition,
+data quality, and transparency of assumptions.
+
 ## 1. Correlative Sample LIMS (PostgreSQL)
 
 This system was designed around real oncology trial workflows, including
 treatment cycles, progression events, biomarker-driven sampling, and
 patient-level metadata that materially affects downstream analysis.
 
-**Goal:**  
-Design a scalable, auditable database for managing correlative
-clinical-trial biospecimens.
+**Problem**  
+Clinical trial biospecimen data is often fragmented across spreadsheets,
+EDCs, and ad hoc tracking systems, making it difficult to understand
+sample provenance, treatment context, and downstream analytic readiness.
+
+**Approach**
+I designed a normalized PostgreSQL schema to manage correlative clinical
+trial samples across their full lifecycle, from collection through
+storage, movement, and analysis. The design reflects real oncology trial
+workflows, including treatment cycles, clinically annotated sampling,
+and operational constraints.
 
 **What I Built**
-- Normalized PostgreSQL schema
-- Controlled vocabularies and lookup tables
+- Normalized relational PostgreSQL schema for studies, subjects, visits, samples, aliquots, storage units, and movement events
+- Controlled vocabularies and lookup tables to enforce consistency
+- Explicit handling of treatment context and clinically meaningful timepoints
 - Sample lifecycle tracking (collection → storage → movement)
 - CDISC/CLIA-aware design considerations
 
-**Key Skills Demonstrated**
-- Relational modeling
+**Data & Clinical Reasoning Demonstrated**
+- Translating treatment cycles and clinical milestones into structured variables
+- Preserving sample provenance and temporal context
+- Designing schemas that support downstream QC and analysis, not just tracking
+
+**Key Skills**
+- Relational data modeling
 - Schema-first thinking
-- Clinical workflow translation into data structures
+- Vairable definition
+- Metadata standards
+- Clinical workflow translation
 - Documentation and version control
 
 🔗 Repo: https://github.com/bonnielacroix/correlative_samples_database
+
+---
+
+## 2. Oncology Data Reasoning & QC Frameworks
+
+This project reflects how clinical reality—pathology findings, treatment
+timing, and patient characteristics—must be translated into precise,
+auditable variables for real-world data analysis.
+
+**Problem**
+Clinical and real-world oncology data often contains ambiguity: conflicting
+dates, unclear treatment intent, evolving disease status, and inconsistent
+variable definitions across sources.
+
+**Approach**
+This project documents how I reason about oncology clinical information
+when defining variables for analysis. Rather than focusing on tools, it
+focuses on decision logic, source prioritization, and documentation of
+uncertainty.
+
+**What I Document**
+- Treatment date reconciliation across structured records and clinical notes
+- Variable Definitions for treatment start, restart, progression, and end
+- Source prioritization (structured vs notes)
+- Handling missing, conflicting, or ambiguous clinical information
+- Appropriate use and limitations of patient-level metadata
+
+**Data & Clinical Reasoning Emphasized**
+- Understanding what clinical variables represent biologically and temporally
+- Making assumptions explicit and auditable
+- Designing variables with downstream analytic impact in mind
+
+**Key Skills Demonstrated**
+- Clinical reasoning
+- Data quality
+- Variable Definition
+- Real-World Data Interpretation and QC
+- Documentation Clarity
+- Decision Traceability
+
+🔗 Repo: https://github.com/bonnielacroix/oncology-data-reasoning
 
 ---
 
@@ -46,26 +108,3 @@ Automate equipment usage logging and generate operational insights.
 🔗 Repo: https://github.com/bonnielacroix/equipment-usage-tracking
 
 ---
-
-## 3. Oncology Data Reasoning & QC Frameworks
-
-This project reflects how clinical reality—pathology findings, treatment
-timing, and patient characteristics—must be translated into precise,
-auditable variables for real-world data analysis.
-
-**Goal:**  
-Demonstrate clinical abstraction logic used in real-world oncology data.
-
-**What I Document**
-- Variable definitions
-- Source prioritization (structured vs notes)
-- Date reconciliation logic
-- Handling ambiguity and missingness
-
-**Key Skills Demonstrated**
-- Clinical reasoning
-- Real-world data QC
-- Documentation clarity
-- Decision traceability
-
-🔗 Repo: https://github.com/bonnielacroix/oncology-data-reasoning
