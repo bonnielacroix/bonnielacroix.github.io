@@ -10,6 +10,10 @@ clinical data and analytics roles. I specialize in:
 - Data validation, QC frameworks, and documentation
 - Research operations automation and systems thinking
 
+My clinical data expertise is grounded in direct interaction with
+oncology-derived clinical materials, biomarker development, treatment
+context, and downstream analytic needs—not solely EHR abstraction.
+
 My work focuses on making messy clinical and research data
 **trustworthy, interpretable, and usable**.
 
