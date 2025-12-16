@@ -1,6 +1,4 @@
-# Bonnie LaCroix
-
-### Clinical Data & Research Operations Portfolio
+# Clinical Data & Research Operations Portfolio
 
 I am a biomedical research operations leader transitioning into
 clinical data and analytics roles. I specialize in:
