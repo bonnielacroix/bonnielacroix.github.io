@@ -35,4 +35,4 @@ My work focuses on making messy clinical and research data
 
 📄 [Resume](resume.html)  
 🔗 [GitHub](https://github.com/bonnielacroix)  
-💼 [LinkedIn](https://www.linkedin.com/bonnielacroix/)
+💼 [LinkedIn](https://www.linkedin.com/in/bonnie-lacroix/)
